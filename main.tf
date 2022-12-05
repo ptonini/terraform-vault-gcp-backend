@@ -1,5 +1,6 @@
 module "service_account" {
-  source = "github.com/ptonini/terraform-google-service-account"
+  source = "ptonini/service-account/google"
+  version = "~> 1.0.0"
   account_id = "vault-sa"
   account_key = true
   project = var.project.project_id
